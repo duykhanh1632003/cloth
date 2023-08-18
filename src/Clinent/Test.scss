@@ -1,0 +1,53 @@
+// Header.scss
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.header-wrapper {
+	height: 92px;
+	background-color: #fff !important; /* Đặt màu nền của header theo màu nền trang */
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	
+	.navbar {
+	  background-color: #fff !important; /* Đặt màu nền của navbar theo màu nền trang */
+	  position: sticky;
+	  top: 0;
+	  font-family: 'Roboto', sans-serif !important;
+	  height: 100%;
+	}
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+
+    &:hover {
+      color: #c35f0e; /* Màu khi hover */
+    }
+  }
+
+  .navbar-text {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .nav-dropdown-item {
+    font-weight: bold;
+    color: #d51111;
+
+    &:hover {
+      color: #007bff; /* Màu khi hover */
+    }
+  }
+  &.show-header {
+    top: 0;
+  }
+}

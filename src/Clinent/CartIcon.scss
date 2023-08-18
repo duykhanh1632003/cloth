@@ -1,0 +1,277 @@
+.body{
+	background-color: #f5ecec;
+	height: 100%;
+	width: 100% ;
+	padding-bottom: 200px;
+	.title{
+		margin-left: 133px;
+		padding-top: 20px;
+		text-align: left;
+		font-size: 22px;
+		font-weight: 500;
+	}
+	.container-cart{
+		margin: 0 133px;
+		.content{
+			display: flex;
+			// flex-direction: column;
+			.content-left{
+				width: 75%;
+				.content-left-container{
+					height: 300px;
+					margin-top: 15px;
+					
+					background-color: white;
+					padding: 19px 16px 0;
+					margin-right: 5px;
+					border-radius: 3px;
+					.house-title{
+						// display: inline-block;
+						font-size: 15px;
+						color: rgb(36, 36, 36);
+						font-weight: 500;
+						position: relative;
+						top: 1px;
+						text-align: left;
+					}
+					.product-detail{
+						display: flex;
+						margin-top: 25px;
+						padding-bottom: 40px;
+						border-bottom:1px solid #999;
+						width: 100%;
+						.col-book{
+
+							width: 40%;
+							display: flex;
+							
+
+							.click-a-item{
+								width: 18px;
+								height: 18px;
+								border: 1px solid rgb(196, 196, 207);
+								border-radius: 4px;
+								margin: 50px 12px 0px 0px;
+								// position: relative;
+								z-index: 1;
+								color: rgb(196, 196, 207);
+								background: transparent;
+								cursor: pointer;
+								&:hover{
+									border: 1px solid rgb(57, 84, 202);
+								}
+								
+							}
+							.click-a-item-done{
+								width: 18px;
+								height: 18px;
+								background-color:  rgb(42, 127, 184);
+								border: 1px  rgb(42, 127, 184);
+								border-radius: 4px;
+								margin: 50px 12px 0px 0px;
+								// position: relative;
+								z-index: 1;
+								cursor: pointer;
+
+							}
+
+
+							.anh-product{
+								height: 115px;
+								width: 75px;
+								img{
+									object-fit: cover;
+									height: 100%;
+									width: 100%;
+								}
+							}
+							.name-product{
+								padding-top: 50px;
+								display: flex;
+								padding-left: 10px;
+								flex-direction: column;
+								.name{
+									font-size: 13px;
+									color: #000;
+									font-weight: 600;
+									cursor: pointer;
+	
+									&:hover{
+										color: rgb(9, 115, 168);
+									}
+								}
+								.fast{
+									font-size: 11px;
+									text-align: left;
+									color: #000;
+									font-weight: 500;
+								}
+							}
+						}
+						.price{
+							width: 23%;
+							text-align: left;
+							padding: 50px 0 0 5px;
+						}
+						.count-product{
+							width: 15%;
+							display: flex;
+							padding-top: 50px;
+							.minus {
+								span{
+									border: 1px solid black;
+									padding: 1px 3px;
+									cursor: pointer;
+								}
+							} 
+							.add{
+								span{
+									border: 1px solid black;
+									padding: 1px 3px;
+									cursor: pointer;
+								}
+							}
+							.so-middle{
+								
+								input{
+									height: 23px;
+									border-radius: none !important;
+									padding: 1px 10px ;
+									width: 100%;
+									border-left: none;
+									border-right: none;
+									background-color: white;
+									border-top:1px solid black ;
+									border-bottom: 1px solid black;
+									width: 40px;
+								}
+							}
+						}
+						.total-price{
+							padding-top: 50px;
+							width: 14%;
+							span{
+								width: 100%;
+								color: red;
+								font-size: 15px;
+							}
+						}
+						.trash-bin{
+							align-items: center;
+							padding: 50px 0 0 30px;
+							span{
+								font-size: 20px;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+			.content-right{
+				width: 25%;
+				margin-top: 15px;
+				// background-color: white;
+				border-radius: 3px;
+				margin-left: 5px;
+				.detail-user{
+					background-color: white;	
+					padding: 10px;
+					.location{
+						.header-location{
+							display: flex;
+							justify-content: space-between;
+							.title-location{
+								font-weight: 500;
+							}
+							.change-location{
+								color: rgb(9, 115, 168) ;
+								cursor: pointer;
+							}
+						}
+						
+					}
+					.name-phoneNumber{
+						display: flex;
+						.name{
+							font-weight: 500;
+							font-size: 14px;
+							padding-right:10px  ;
+							border-right:1px solid #999 ;
+							margin-right: 10px;
+						}
+						.phoneNumber{
+							font-weight: 500;
+							font-size: 14px;
+						}
+						margin-bottom: 5px;
+					}
+					.address{
+						span{
+							border-radius: 8px;
+							background-color: #EFFFF4;
+							padding: 3px;
+							font-size: 14px;
+							color: #00AB56;
+							font-weight: 500;;
+						}
+						text-align: left;
+						color: #808089;
+					}
+				}
+				.price-money{
+					margin-top: 15px;
+					background-color:white;
+					padding: 10px;
+					.temporary-caculate{
+						display: flex;
+						justify-content: space-between;
+						border-bottom: 1px solid #999999;
+						padding-bottom: 30px;
+						.temporary-caculate-name{
+							color: #333333;
+						}
+						.temporary-caculate-price{
+							font-weight: 500;
+						}
+					}
+					.total-money{
+						display: flex;
+						margin-top: 20px;
+						.total-money-name{
+							width: 30%;
+						}
+						.total-money-price{
+							width: 70%;
+							display: flex;
+							flex-direction: column;
+							align-items:end;
+							padding-bottom: 25px;
+	
+							.main{
+								color: #FE3834;
+								font-size: 22px;
+							}
+							.vat{
+								color: #333333;
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+			.submit-form{
+				width: 100%;
+				margin-top: 20px;
+				color: #FFFFFF;
+				background-color: #FF424E;
+				border: none;
+				padding: 13px 10px;
+
+				&:hover{
+					opacity: (0.8);
+				}
+			}
+			
+		}
+	}
+}

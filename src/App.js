@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css"; // Đảm bảo đã import CSS của Bootstrap
+import Header from "./components/Header";
+import { UserContext } from "./contex/userContext";
+import { useContext } from "react";
+import { useEffect } from "react";
+import AppRoute from "./routes/AppRoute";
+import { useDispatch } from "react-redux";
+import { handleRefresh } from "./redux/action/userAction";
+import { setCurrentPage } from "./redux/action/userAction";
+import { useNavigate } from "react-router-dom";
+
 
 function App() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem("isLoggedIn")) {
+      dispatch(handleRefresh(navigate));
+    }
+
+  }, []);
+
+  useEffect(() => {
+    
+    if (!localStorage.getItem("isLoggedIn")) {
+      navigate(-1)
+    }
+  }, []);
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+        <AppRoute />
     </div>
   );
 }
 
 export default App;
+
+
+
+
+

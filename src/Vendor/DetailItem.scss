@@ -1,0 +1,66 @@
+/* Sử dụng font chữ Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Áp dụng font chữ Roboto cho toàn bộ trang web */
+body {
+  font-family: 'Roboto', sans-serif;
+  .title-header{
+	color: rgba(22, 24, 35, 1);
+    font-family: TikTokDisplayFont;
+    font-size: 32px;
+    margin: 16px auto;
+    font-weight: bold;
+    text-align: center;
+	font-family: 'Roboto', sans-serif;
+
+	
+	}
+	.name-input{
+		font-size: 14px;
+		font-weight: 600;
+
+	}
+	.title-button-select{
+		display: flex;
+
+		.btn-danger{
+			margin-left: 10px;
+		}
+	}
+
+	.title-have-item{
+		font-size: 17px;
+		font-weight: 600;
+		text-align: start;
+		padding: 0 0 0 15px;
+		
+	}
+
+	.preview-img-container{
+		height: 150px;
+		.label-upload { // Fixed the class name here, changing ".label.upload" to ".label-upload"
+		  padding: 5px;
+		  border-radius: 3px;
+		  background: #ddd;
+		  cursor: pointer;
+
+		  &:hover {
+			opacity: 0.9;
+		  }
+		}
+		.preview-image{
+			margin-top: 5px;
+			height: 184%;
+			width: 100%;
+			border: 1px solid #ddd;
+			background: center center no-repeat;
+			background-size: contain;
+			cursor: pointer;
+		}
+		.label-upload{
+			background-color: #007bff;
+		}
+	  }
+}
+
+

@@ -1,0 +1,100 @@
+.MyFrom{
+	// MyForm.scss
+
+.container-Myform {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	margin: 60px;
+  }
+  
+  form {
+	width: 100%;
+	max-width: 1000px;
+	padding: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+  }
+  
+  .form-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+  }
+  
+  .form-group {
+	flex: 1;
+	padding: 0 10px;
+  }
+  
+  .label {
+	color: #333;
+  }
+  
+  .form-control {
+	
+	width: 100%;
+	// padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 5px;
+	font-size: 14px;
+	/* Add the following lines to increase the width of the select */
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 100%;
+  }
+  
+  
+  .btn-primary {
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+	background-color: #0056b3;
+  }
+  
+
+  /* CSS gốc ở trên */
+
+/* Thêm kiểu dáng cho điện thoại di động */
+@media screen and (max-width: 600px) {
+	.container-Myform {
+	  margin: 20px; /* Giảm khoảng cách biên ngoài */
+	}
+  
+	form {
+	  padding: 15px; /* Giảm khoảng cách lề bên trong */
+	}
+  
+	.form-group {
+	  flex: 1;
+	  padding: 0 5px; /* Giảm khoảng cách lề bên trong */
+	}
+  
+	.label {
+	  font-size: 14px; /* Giảm kích thước font */
+	}
+  
+	.form-control {
+	  font-size: 14px; /* Giảm kích thước font */
+	  padding: 8px; /* Giảm khoảng cách lề bên trong */
+	}
+  
+	.btn-primary {
+	  font-size: 14px; /* Giảm kích thước font */
+	  padding: 8px 15px; /* Giảm kích thước nút */
+	}
+  }
+  
+}

@@ -1,0 +1,32 @@
+/* MyForm.scss */
+.edit-tableUser {
+	background-color: #ffcc00; /* Màu vàng nhạt */
+	color: #130707; /* Màu chữ trắng */
+	border: none;
+	margin-right: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .edit-tableUser:hover {
+	background-color: #ffd700; /* Màu vàng tương tự nhưng sáng hơn */
+	transform: scale(1.05); /* Tăng kích thước khi hover */
+  }
+  
+  .delete-tableUser {
+	background-color: #ff6666; /* Màu đỏ */
+	color: #fff; /* Màu chữ trắng */
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .delete-tableUser:hover {
+	background-color: #ff4d4d; /* Màu đỏ tương tự nhưng sáng hơn */
+	transform: scale(1.05); /* Tăng kích thước khi hover */
+  }
+  
